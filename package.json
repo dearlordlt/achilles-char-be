@@ -1,0 +1,26 @@
+{
+  "name": "achilles-char-be",
+  "version": "1.0.0",
+  "description": "BE",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "debug": "node --inspect app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dearlordlt/achilles-char-be.git"
+  },
+  "author": "dearlord",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dearlordlt/achilles-char-be/issues"
+  },
+  "homepage": "https://github.com/dearlordlt/achilles-char-be#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.0.11",
+    "ramda": "^0.25.0"
+  }
+}
