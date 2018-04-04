@@ -2,6 +2,28 @@ const express = require('express');
 const app = express();
 const R = require('ramda');
 
-app.get('/api/v1/', (req, res) => res.send('Hello World!'))
+/**
+ * 
+ */
+const urlPrefix = '/api/v1/';
+const port = process.argv[2] || 3000;
 
-app.listen(3000, () => console.log('Listening on port 3000! *http://localhost:3000/api/v1/*'));
+/**
+ * PING
+ */
+app.get(`${urlPrefix}`, (req, res) => res.send('Hello World!'));
+
+/**
+ * ROUTES
+ */
+const users = require('./routes/users');
+
+/**
+ * 
+ */
+app.use(`${urlPrefix}/users`, users);
+
+/**
+ * SERVER
+ */
+app.listen(port, () => console.log(`Listening on port ${port}! *http://localhost:${port}/api/v1/*`));
