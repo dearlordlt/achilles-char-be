@@ -5,13 +5,8 @@ const R = require('ramda');
 /**
  * 
  */
-const urlPrefix = '/api/v1/';
+const urlPrefix = '/api/v1';
 const port = process.argv[2] || 3000;
-
-/**
- * PING
- */
-app.get(`${urlPrefix}`, (req, res) => res.send('Hello World!'));
 
 /**
  * ROUTES
@@ -22,6 +17,11 @@ const users = require('./routes/users');
  * 
  */
 app.use(`${urlPrefix}/users`, users);
+
+/**
+ * PING
+ */
+app.get(`${urlPrefix}`, (req, res) => res.send('Hello World!'));
 
 /**
  * SERVER
