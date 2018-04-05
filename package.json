@@ -4,10 +4,10 @@
   "description": "BE",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node app.js 4444 localhost",
     "debug": "node --inspect app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon app.js 4444"
+    "watch": "nodemon app.js 4444 localhost"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/dearlordlt/achilles-char-be#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "mongoose": "^5.0.11",
+    "morgan": "^1.9.0",
     "ramda": "^0.25.0"
   }
 }
