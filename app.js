@@ -2,13 +2,23 @@ const express = require('express');
 const morgan = require('morgan')
 const R = require('ramda');
 const bodyParser = require('body-parser');
+const auth = require('http-auth');
+
+/**
+ * AUTH
+ */
+const basic = auth.basic({
+    realm: "Super slaptai viskas!",
+    file: __dirname + "/httpasswd/.httpasswd"
+});
 
 const app = express();
+const authMiddleware = auth.connect(basic);
 
 /**
  * MIDDLEWARE
  */
-app.use(morgan('combined'));
+app.use(morgan('tiny'));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
@@ -23,7 +33,10 @@ const host = process.argv[3] || 'localhost';
  * ROUTES
  */
 const users = require('./routes/users');
-app.use(`${urlPrefix}/users`, users);
+app.use(`${urlPrefix}/users`,authMiddleware, users);
+
+const login = require('./routes/login');
+app.use(`${urlPrefix}/login`,authMiddleware, login);
 
 /**
  * PING
@@ -33,4 +46,4 @@ app.get(`${urlPrefix}`, (req, res) => res.send('Hello World!'));
 /**
  * SERVER
  */
-app.listen(port, () => console.log(`Listening on port ${port}! *http://${host}:${port}/api/v1/*`));
+app.listen(port, () => console.log(`Listening on port ${port}! *http://${host}:${port}/api/v1/*`)); 

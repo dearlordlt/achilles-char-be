@@ -8,11 +8,7 @@ router.use((req, res, next) => {
 });
 
 router.get('/',  (req, res) => {
-  res.json({"users": "hey"});
-});
-
-router.get('/about', (req, res) => {
-  res.json({"users": { "about": "hey" }});
+  res.json({"auth": "success"});
 });
 
 module.exports = router
