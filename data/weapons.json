@@ -1,0 +1,25 @@
+[
+    {
+        "id": "asdjkasdjkasdjk0",
+        "isCustom": "false",
+        "name": "axe",
+        "type": "unballanced",
+        "stats": {
+            "weight": 2
+        }
+    },
+    {
+        "id": "asdjkasdjkasdjk1",
+        "isCustom": "true",
+        "name": "axe of total anihilation",
+        "type": "unballanced",
+        "meta": {
+            "created": "2018-01-01 00:00:00",
+            "updated": "2018-01-01 00:00:01",
+            "createdBy": "admin"
+        },
+        "stats": {
+            "weight": 0
+        }
+    }
+]

@@ -1,0 +1,106 @@
+{
+    "basicInfo": {
+        "id": "1321321312231",
+        "created": "2018-01-01 00:00:00",
+        "updated": "2018-01-01 00:00:01",
+        "name": "the name",
+        "owner": "id...",
+        "description": "<string>",
+        "LUCK": 10
+    },
+    "free_points": {
+        "attributes": 8,
+        "skills": 50
+    },
+    "ncg": {
+        "talents": {
+            "values": [
+                [[["PERFORMER"], "OPERATOR"], ["LABORER", "CRAFTSMAN"]], ["ANALYTIC", "ARCHITECT", "LEADER", "ARTIST"]
+            ],
+            "switched": ["PERFORMER", "LEADER"]
+        },
+        "skills": [
+            {
+                "name": "survival",
+                "value": 0,
+                "specs": [{"name": "desert", "value": 1}, {"name": "arctic", "value": 3}]
+            },
+            {
+                "name": "medicine",
+                "value": 0,
+                "specs": []
+            },
+            {
+                "name": "persuation",
+                "value": 0,
+                "specs": []
+            }
+        ]
+    },
+    "cg": {
+        "attributes": {
+            "STRENGTH": {
+                "value": 10,
+                "points": 0
+            },
+            "STAMINA": {
+                "value": 13,
+                "points": 3
+            },
+            "REFLEXES": {
+                "value": 14,
+                "points": 5
+            },
+            "DEXTERITY": {
+                "value": 9,
+                "points": -1
+            },
+            "PERSEPTION": {
+                "value": 10,
+                "points": 0
+            },
+            "WILL": {
+                "value": 10,
+                "points": 0
+            }
+        },
+        "skills": [
+            {
+                "name": "close quarters",
+                "value": 3,
+                "points": 3
+            },
+            {
+                "name": "evade",
+                "value": 5,
+                "points": 7
+            },
+            {
+                "name": "balanced",
+                "value": 7,
+                "points": 12
+            }
+        ],
+        "weapons": ["id1", "id2", "id3", "customWeaponId1"],
+        "shields": ["id1"],
+        "ranged": ["id1"],
+        "armor": {
+            "head": {"armor": 2, "weight": 1},
+            "body": {"armor": 2, "weight": 1},
+            "left_arm": {"armor": 2, "weight": 1},
+            "right_arm": {"armor": 2, "weight": 1},
+            "left_leg": {"armor": 2, "weight": 1},
+            "right_leg": {"armor": 2, "weight": 1}
+        },
+        "health": {
+            "head": {"total": 2, "critical": 1, "trauma": 1, "bleed": 1},
+            "body": {"total": 2, "critical": 1, "trauma": 1, "bleed": 1},
+            "left_arm": {"total": 2, "critical": 1, "trauma": 1, "bleed": 1},
+            "right_arm": {"total": 2, "critical": 1, "trauma": 1, "bleed": 1},
+            "left_leg": {"total": 2, "critical": 1, "trauma": 1, "bleed": 1},
+            "right_leg": {"total": 2, "critical": 1, "trauma": 1, "bleed": 1}
+        },
+        "vigor": 10,
+        "burden": 0
+    }
+}
