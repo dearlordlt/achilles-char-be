@@ -7,7 +7,8 @@
     "start": "node app.js 4444 localhost",
     "debug": "node --inspect app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon app.js 4444 localhost"
+    "watch": "nodemon app.js 4444 localhost",
+    "generate": "node ./data/generate.js"
   },
   "repository": {
     "type": "git",
