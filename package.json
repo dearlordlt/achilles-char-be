@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/dearlordlt/achilles-char-be.git"
   },
-  "author": "dearlord",
+  "author": "dearlord, nim",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dearlordlt/achilles-char-be/issues"
