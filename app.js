@@ -1,5 +1,5 @@
 const express = require('express');
-const morgan = require('morgan')
+const morgan = require('morgan');
 const R = require('ramda');
 const bodyParser = require('body-parser');
 const auth = require('http-auth');
@@ -19,10 +19,10 @@ const authMiddleware = auth.connect(basic);
  * MIDDLEWARE
  */
 app.use(morgan('tiny'));
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
+    res.header("Access-Control-Allow-Origin", "http://localhost:4200");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     res.header("Access-Control-Allow-Credentials", "true");
     next();
@@ -39,10 +39,10 @@ const host = process.argv[3] || 'localhost';
  * ROUTES
  */
 const users = require('./routes/users');
-app.use(`${urlPrefix}/users`,authMiddleware, users);
+app.use(`${urlPrefix}/users`, authMiddleware, users);
 
 const login = require('./routes/login');
-app.use(`${urlPrefix}/login`,authMiddleware, login);
+app.use(`${urlPrefix}/login`, authMiddleware, login);
 
 /**
  * PING
