@@ -1,5 +1,45 @@
 [
-    "survival",
-    "medicine",
-    "persuation"
+    {"name": "survival", "type": "outdoor", "specs": [
+        {"name": "desert", "cost": "2"},
+        {"name": "woods", "cost": "1"},
+        {"name": "arctic", "cost": "3"},
+        {"name": "plains", "cost": "1"}
+    ]},
+    {"name": "medicine", "type": "crafts", "specs": [
+        {"name": "surgery", "cost": "3"},
+        {"name": "medicines", "cost": "2"},
+        {"name": "first aid", "cost": "1"}
+    ]},
+    {"name": "persuation", "type": "social", "specs": [
+        {"name": "chat", "cost": "1"},
+        {"name": "high society", "cost": "1"},
+        {"name": "politics", "cost": "2"},
+        {"name": "public speaking", "cost": "2"}
+    ]},
+    {"name": "performance", "type": "social", "specs": [
+        {"name": "acting", "cost": "2"},
+        {"name": "singing", "cost": "2"},
+        {"name": "ritual", "cost": "2"}
+    ]},
+    {"name": "blacksmith", "type": "crafts", "specs": [
+        {"name": "weapons", "cost": "3"},
+        {"name": "tools", "cost": "1"},
+        {"name": "armor", "cost": "2"}
+    ]},
+    {"name": "gambling", "type": "social", "specs": [
+        {"name": "card games", "cost": "1"},
+        {"name": "dices", "cost": "1"}
+    ]},
+    {"name": "leadership", "type": "social", "specs": [
+        {"name": "command", "cost": "2"},
+        {"name": "inspire", "cost": "3"}
+    ]},
+    {"name": "warfare", "type": "military", "specs": [
+        {"name": "naval", "cost": "2"},
+        {"name": "urban", "cost": "2"},
+        {"name": "pitch battle", "cost": "2"},
+        {"name": "guerilla", "cost": "3"}
+    ]},
+    {"name": "strategy", "type": "military", "specs": []},
+    {"name": "chess", "type": "hobby", "specs": []}
 ]
