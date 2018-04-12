@@ -1,6 +1,6 @@
 # achilles-char-be
 
-GET 	api/v1/auth +
+GET 	api/v1/login +
 
 GET 	api/v1/characters/
 GET 	api/v1/characters/:charid
