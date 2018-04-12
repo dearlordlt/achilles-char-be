@@ -41,6 +41,8 @@ const host = process.argv[3] || 'localhost';
 app.use(`${urlPrefix}/users`, authMiddleware, require('./routes/users'));
 app.use(`${urlPrefix}/login`, authMiddleware, require('./routes/login'));
 app.use(`${urlPrefix}/characters`, authMiddleware, require('./routes/characters'));
+app.use(`${urlPrefix}/skills_cg`, authMiddleware, require('./routes/skills_cg'));
+app.use(`${urlPrefix}/skills_ncg`, authMiddleware, require('./routes/skills_ncg'));
 
 /**
  * PING
