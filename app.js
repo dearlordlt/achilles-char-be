@@ -38,11 +38,9 @@ const host = process.argv[3] || 'localhost';
 /**
  * ROUTES
  */
-const users = require('./routes/users');
-app.use(`${urlPrefix}/users`, authMiddleware, users);
-
-const login = require('./routes/login');
-app.use(`${urlPrefix}/login`, authMiddleware, login);
+app.use(`${urlPrefix}/users`, authMiddleware, require('./routes/users'));
+app.use(`${urlPrefix}/login`, authMiddleware, require('./routes/login'));
+app.use(`${urlPrefix}/characters`, authMiddleware, require('./routes/characters'));
 
 /**
  * PING

@@ -11,4 +11,4 @@ router.get('/',  (req, res) => {
   res.json({"auth": "success"});
 });
 
-module.exports = router
+module.exports = router;

@@ -15,4 +15,4 @@ router.get('/about', (req, res) => {
   res.json({"users": { "about": "hey" }});
 });
 
-module.exports = router
+module.exports = router;
