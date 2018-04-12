@@ -21,3 +21,5 @@ GET		api/v1/charaters/:charid/notes
 POST	api/v1/charaters/:charid/notes
 DELETE	api/v1/charaters/:charid/notes/:noteid
 PATCH	api/v1/charaters/:charid/notes/:noteid
+
+POSTMAN - https://www.getpostman.com/collections/bfd314916042c0eb0462
