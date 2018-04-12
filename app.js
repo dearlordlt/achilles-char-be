@@ -43,6 +43,7 @@ app.use(`${urlPrefix}/login`, authMiddleware, require('./routes/login'));
 app.use(`${urlPrefix}/characters`, authMiddleware, require('./routes/characters'));
 app.use(`${urlPrefix}/skills_cg`, authMiddleware, require('./routes/skills_cg'));
 app.use(`${urlPrefix}/skills_ncg`, authMiddleware, require('./routes/skills_ncg'));
+app.use(`${urlPrefix}/weapons`, authMiddleware, require('./routes/weapons'));
 
 /**
  * PING

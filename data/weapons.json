@@ -1,6 +1,6 @@
 [
     {
-        "isCustom": "false",
+        "isCustom": "no",
         "name": "broadsword",
         "type": "ballanced",
         "meta": {},
@@ -22,7 +22,7 @@
         "notes": "blabla"
     },
     {
-        "isCustom": "false",
+        "isCustom": "no",
         "name": "axe",
         "type": "unballanced",
         "meta": {},
@@ -41,7 +41,7 @@
         "notes": "blabla"
     },
     {
-        "isCustom": "true",
+        "isCustom": "yes",
         "name": "axe_of_total_anihilation",
         "type": "unballanced",
         "meta": {
