@@ -1,10 +1,10 @@
 {
     "basicInfo": {
-        "id": "1321321312231",
+        "id": "THE_NAME",
         "created": "2018-01-01 00:00:00",
         "updated": "2018-01-01 00:00:01",
         "name": "the name",
-        "owner": "id...",
+        "owner": "admin",
         "description": "<string>",
         "LUCK": 10
     },
@@ -79,11 +79,16 @@
                 "name": "balanced",
                 "value": 7,
                 "points": 12
+            },
+            {
+                "name": "light sword",
+                "value": 7,
+                "points": 12
             }
         ],
-        "weapons": ["id1", "id2", "id3", "customWeaponId1"],
-        "shields": ["id1"],
-        "ranged": ["id1"],
+        "weapons": ["axe", "sword", "spear", "magic_sword"],
+        "shields": ["wooden_shield_medium"],
+        "ranged": ["composite_bow"],
         "armor": {
             "head": {"armor": 2, "weight": 1},
             "body": {"armor": 2, "weight": 1},

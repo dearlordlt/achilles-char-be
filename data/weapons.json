@@ -1,17 +1,48 @@
 [
     {
-        "id": "asdjkasdjkasdjk0",
+        "isCustom": "false",
+        "name": "broadsword",
+        "type": "ballanced",
+        "meta": {},
+        "stats": {
+            "base_dmg_swing": {
+                "dmg": 2,
+                "ap": 0
+            },
+            "base_dmg_thrust": {
+                "dmg": 2,
+                "ap": 2
+            },
+            "effects_swing": "BBT",
+            "effects_thrust": "BBC",
+            "reach": [1],
+            "min_str": 10,
+            "weight": 2
+        },
+        "notes": "blabla"
+    },
+    {
         "isCustom": "false",
         "name": "axe",
         "type": "unballanced",
+        "meta": {},
         "stats": {
+            "base_dmg_swing": {
+                "dmg": 3,
+                "ap": 1
+            },
+            "base_dmg_thrust": {},
+            "effects_swing": "BBT",
+            "effects_thrust": "",
+            "reach": [1],
+            "min_str": 11,
             "weight": 2
-        }
+        },
+        "notes": "blabla"
     },
     {
-        "id": "asdjkasdjkasdjk1",
         "isCustom": "true",
-        "name": "axe of total anihilation",
+        "name": "axe_of_total_anihilation",
         "type": "unballanced",
         "meta": {
             "created": "2018-01-01 00:00:00",
@@ -19,7 +50,17 @@
             "createdBy": "admin"
         },
         "stats": {
-            "weight": 0
-        }
+            "base_dmg_swing": {
+                "dmg": 4,
+                "ap": 2
+            },
+            "base_dmg_thrust": {},
+            "effects_swing": "BBBT",
+            "effects_thrust": "",
+            "reach": [1],
+            "min_str": 11,
+            "weight": 2
+        },
+        "notes": "blabla"
     }
 ]
